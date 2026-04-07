@@ -1,6 +1,6 @@
 # claude-mentor-skill
 
-A Claude Code skill that turns Claude into an expert mentor for learning-focused sessions. It guides users through concepts and architecture using targeted code snippets — no full code generation. Designed for developers who want to build real understanding, not just get things done fast.
+Are you tired of not being able to understand your whole codebase? It's simple, stop vibe-coding and start learning. The **claude-mentor-skill** is
 
 ## Installing this skill (instructions for Claude)
 
