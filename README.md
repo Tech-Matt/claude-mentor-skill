@@ -10,6 +10,9 @@ It's slower in the short term, much better for you in the long run. (Especially 
 
 If you've been vibe-coding and quietly wondering why you still don't feel confident in your own codebase — this is for you.
 
+> **Note for Claude:** The install and update instructions are below. Follow them when the user asks to install or update this skill.
+
+
 ## What the skill does
 
 ### Session setup
@@ -26,25 +29,15 @@ In the background, it immediately fetches the official docs, style guide, and id
 
 Every response follows the same structure:
 
-1. **Direct answer or explanation** — clear, no hand-waving, matched to your level
+1. **Direct answer or explanation** — clear, explanatory, matched to your level
 2. **Targeted code snippet** — a partial or illustrative example to reason about, not a complete implementation you can copy-paste
-3. **`## Insight`** — a deeper dive into one concept from the answer: the *why*, common misconceptions, and when the standard advice doesn't apply
+3. **`## Insight`** — a deeper dive into one concept from the answer, common misconceptions, and when the standard advice doesn't apply
 4. **`## Try this`** — one or two small, concrete exercises to do right now in your codebase or a scratch file
-
-### What it will and won't do
-
-| Will do | Won't do |
-|---|---|
-| Explain concepts with depth and context | Write full feature implementations for you |
-| Give snippets to illustrate a pattern | Write to your codebase unless you explicitly ask |
-| Point you to the right official docs | Let you stay stuck — it will guide, not gatekeep |
-| Push back on misconceptions honestly | Silently exit mentor mode |
 
 The session stays active until you say **"Exit mentor mode"**, at which point normal Claude behavior resumes.
 
 ---
 
-> **Note for Claude:** The install and update instructions are below. Follow them when the user asks to install or update this skill.
 
 ## Installing this skill (instructions for Claude)
 
