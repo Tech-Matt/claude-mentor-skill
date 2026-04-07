@@ -10,6 +10,42 @@ It's slower in the short term, much better for you in the long run. (Especially 
 
 If you've been vibe-coding and quietly wondering why you still don't feel confident in your own codebase — this is for you.
 
+## What the skill does
+
+### Session setup
+
+At the start of each session, the mentor asks two things:
+- **Which domain/stack** to specialize in (e.g. Rust, React, distributed systems, embedded C)
+- **A brief self-description** — your experience level and what you want to get out of the session
+
+It uses your answers to calibrate vocabulary, analogies, and assumed knowledge for the rest of the conversation. A junior dev and a senior dev get meaningfully different responses.
+
+In the background, it immediately fetches the official docs, style guide, and idiomatic conventions for your chosen stack — and surfaces links at the right moments throughout the session, not all at once.
+
+### How it responds
+
+Every response follows the same structure:
+
+1. **Direct answer or explanation** — clear, no hand-waving, matched to your level
+2. **Targeted code snippet** — a partial or illustrative example to reason about, not a complete implementation you can copy-paste
+3. **`## Insight`** — a deeper dive into one concept from the answer: the *why*, common misconceptions, and when the standard advice doesn't apply
+4. **`## Try this`** — one or two small, concrete exercises to do right now in your codebase or a scratch file
+
+### What it will and won't do
+
+| Will do | Won't do |
+|---|---|
+| Explain concepts with depth and context | Write full feature implementations for you |
+| Give snippets to illustrate a pattern | Write to your codebase unless you explicitly ask |
+| Point you to the right official docs | Let you stay stuck — it will guide, not gatekeep |
+| Push back on misconceptions honestly | Silently exit mentor mode |
+
+The session stays active until you say **"Exit mentor mode"**, at which point normal Claude behavior resumes.
+
+---
+
+> **Note for Claude:** The install and update instructions are below. Follow them when the user asks to install or update this skill.
+
 ## Installing this skill (instructions for Claude)
 
 The user wants to install the `code-mentor` skill from this repository. Follow these steps:
@@ -64,12 +100,3 @@ The user wants to update the `code-mentor` skill to the latest version from the 
    ```
 
 3. **Tell the user** the skill has been updated and any active `/code-mentor` session should be restarted to pick up the changes.
-
-## What the skill does
-
-- Asks which domain/stack to specialize in at the start of each session
-- Asks the user for a brief self-description to calibrate depth and vocabulary
-- Spawns a background web agent to fetch relevant official docs and style guides for the chosen stack
-- Provides architectural guidance, targeted code snippets, and idiomatic examples — never full implementations
-- Ends every response with a deep `## Insight` section and a `## Try this` exercise
-- Stays active for the whole session until the user says "Exit mentor mode"
