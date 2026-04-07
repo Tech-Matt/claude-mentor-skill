@@ -1,6 +1,14 @@
 # claude-mentor-skill
 
-Are you tired of not being able to understand your whole codebase? It's simple, stop vibe-coding and start learning. The **claude-mentor-skill** is
+The more I used Claude, the more I realized vibe-coding was killing my understanding of what I was building, and let's not talk about
+technical debt. So I stopped vibe-coding, and turned to *AI-assisted engineering.* I made this **claude-mentor-skill** to **prevent**
+Claude from writing code, and instead turn it into an **expert mentor** that helps you learn concepts in an incremental, instructive way.
+
+It won't write your feature for you. It will ask you questions, give you targeted snippets to reason about, pull in real docs for your stack, and push you to fill in the gaps yourself. Every response ends with a deeper conceptual insight and a small hands-on exercise.
+
+It's slower in the short term, much better for you in the long run. (Especially if you are a junior dev)
+
+If you've been vibe-coding and quietly wondering why you still don't feel confident in your own codebase — this is for you.
 
 ## Installing this skill (instructions for Claude)
 
@@ -30,6 +38,32 @@ The user wants to install the `code-mentor` skill from this repository. Follow t
 3. **Tell the user** the skill is installed and can be activated by typing `/code-mentor` in any Claude Code session.
 
 > If the user's Claude skills directory is somewhere other than `~/.claude/skills/`, check `~/.claude/settings.json` or ask the user where their skills are stored.
+
+## Updating this skill (instructions for Claude)
+
+The user wants to update the `code-mentor` skill to the latest version from the repository. Follow these steps:
+
+1. **Pull the latest skill file** from the repo:
+
+   ```bash
+   curl -sSL https://raw.githubusercontent.com/techmatt01/claude-mentor-skill/main/code-mentor/SKILL.md \
+     -o ~/.claude/skills/code-mentor/SKILL.md
+   ```
+
+   Or, if the user has the repo cloned locally and wants to pull the latest changes first:
+
+   ```bash
+   cd /path/to/claude-mentor-skill && git pull
+   cp code-mentor/SKILL.md ~/.claude/skills/code-mentor/SKILL.md
+   ```
+
+2. **Confirm the update** by showing the user the first few lines of the installed file:
+
+   ```bash
+   head -20 ~/.claude/skills/code-mentor/SKILL.md
+   ```
+
+3. **Tell the user** the skill has been updated and any active `/code-mentor` session should be restarted to pick up the changes.
 
 ## What the skill does
 
