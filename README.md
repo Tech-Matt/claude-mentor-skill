@@ -47,7 +47,7 @@ The user wants to install the `code-mentor` skill from this repository. Follow t
 
    ```bash
    mkdir -p ~/.claude/skills/code-mentor
-   curl -sSL https://raw.githubusercontent.com/techmatt01/claude-mentor-skill/main/code-mentor/SKILL.md \
+   curl -sSL https://raw.githubusercontent.com/Tech-Matt/claude-mentor-skill/refs/heads/main/code-mentor/SKILL.md \
      -o ~/.claude/skills/code-mentor/SKILL.md
    ```
 
@@ -75,7 +75,7 @@ The user wants to update the `code-mentor` skill to the latest version from the 
 1. **Pull the latest skill file** from the repo:
 
    ```bash
-   curl -sSL https://raw.githubusercontent.com/techmatt01/claude-mentor-skill/main/code-mentor/SKILL.md \
+   curl -sSL https://raw.githubusercontent.com/Tech-Matt/claude-mentor-skill/refs/heads/main/code-mentor/SKILL.md \
      -o ~/.claude/skills/code-mentor/SKILL.md
    ```
 
