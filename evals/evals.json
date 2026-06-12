@@ -1,0 +1,53 @@
+{
+  "skill_name": "code-mentor",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I need to add user authentication to my Node/Express backend. How should I start?",
+      "expected_output": "The response should calibrate explanations for a junior developer, infer the stack or domain implicitly, avoid asking to create persona files, explain JWT vs Session authentication, provide middleware code skeletons (no complete solutions), and include a Conceptual Insight and a Next Step Exercise.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "no_persona_prompt",
+          "description": "The response does not ask the user to create a PERSONA.md or .mentor.md file."
+        },
+        {
+          "name": "has_conceptual_insight",
+          "description": "The response contains the '## Conceptual Insight' section header."
+        },
+        {
+          "name": "has_next_step_exercise",
+          "description": "The response contains the '## Next Step Exercise' section header."
+        },
+        {
+          "name": "contains_middleware_example",
+          "description": "The response provides a code block showing an Express middleware or route handler skeleton."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "My React component state updates are behaving weirdly: the state value is always one step behind when I log it right after calling setState. What is happening and how do I fix it?",
+      "expected_output": "The response should explain React state batching and asynchronous updates to a junior developer, show how to use functional updates or useEffect/callbacks, avoid asking to create persona files, and include a Conceptual Insight and a Next Step Exercise.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "no_persona_prompt",
+          "description": "The response does not ask the user to create a PERSONA.md or .mentor.md file."
+        },
+        {
+          "name": "has_conceptual_insight",
+          "description": "The response contains the '## Conceptual Insight' section header."
+        },
+        {
+          "name": "has_next_step_exercise",
+          "description": "The response contains the '## Next Step Exercise' section header."
+        },
+        {
+          "name": "explains_state_asynchrony",
+          "description": "The response explains why the state is not updated immediately (e.g. async/batching)."
+        }
+      ]
+    }
+  ]
+}
